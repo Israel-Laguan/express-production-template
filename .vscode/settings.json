@@ -1,0 +1,19 @@
+{
+    // Prevents VS Code from formatting JavaScript with the default linter
+    "javascript.format.enable": false,
+  
+    // Prevents VS Code linting JavaScript with the default linter
+    "javascript.validate.enable": false,
+  
+    // Lints with Standard JS
+    "standard.enable": true,
+  
+    // Format files with Standard whenever you save the file
+    "standard.autoFixOnSave": true,
+  
+    // Files to validate with Standard JS
+    "standard.validate": [
+      "javascript",
+      "javascriptreact"
+    ]
+  }

@@ -1,0 +1,55 @@
+{
+  "name": "your-server",
+  "version": "0.1.0",
+  "description": "server in NODE using Express",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2-runtime start ./server/ecosystem.config.js --env production",
+    "dev": "NODE_ENV=development nodemon -r dotenv/config index.js",
+    "test": "standard && jest --coverage -w=100%",
+    "test:watch": "jest --watch -w=100%",
+    "lint": "eslint . --cache -f table",
+    "lint-fix": "eslint . --fix"
+  },
+  "keywords": [
+    "nodejs",
+    "expressjs",
+    "backend",
+    "eslint",
+    "middlewares",
+    "API",
+    "pm2",
+    "vscode"
+  ],
+  "author": "Israel Laguan <github.com/Israel-Laguan>",
+  "license": "Apache 2",
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^25.2.6",
+    "nodemon": "^2.0.2",
+    "standard": "^14.3.3",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.1.1",
+    "express-validator": "^6.4.0",
+    "helmet": "^3.22.0",
+    "method-override": "^3.0.0",
+    "morgan": "^1.10.0",
+    "pm2": "^4.2.3",
+    "response-time": "^2.3.2",
+    "winston": "^3.2.1"
+  }
+}
